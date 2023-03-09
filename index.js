@@ -13,24 +13,27 @@ let messageSent = false;
 function preload() {
   happyMole = loadImage('images/happyBobaBee.gif');
   sadMole = loadImage('images/sadBobaBee.gif');
+  cheerMole = loadImage('images/cheerBobaBee.gif');
   owSong = loadSound('audio/ow.mp3');
   wrongSong = loadSound('audio/wrong.mp3');
 }
 
 function setup() {
-  createCanvas(800, 450, 'pixelated');
+  createCanvas(800, 450);
+
+  // resize images
+  //happyMole.resize(70, 70);
+  cheerMole.resize(85,85);
+  sadMole.resize(60, 60); 
+
   spriteSize = 40;
-  spriteX = 60;
+  spriteX = 80;
   spriteY = height/2 - spriteSize/2;
   ground = new Sprite(0, height/4*3, width*3, 5, 'static');
   blobs = new Group();
   cookieChar = new Sprite(spriteX, spriteY, spriteSize);
-  cookieChar.img = happyMole;
-  world.gravity.y = 10.8;
-
-  // resize images
-  happyMole.resize(70, 70);
-  sadMole.resize(60, 60);  
+  cookieChar.img = cheerMole;
+  world.gravity.y = 10.8; 
   
   // set scores and stuff
   currentScore = 0;
@@ -60,9 +63,8 @@ function playGame() {
 
   if (cookieChar.collides(blobs)) {
     blobs.removeAll();
-    cookieChar.sleeping = true;
+    cookieChar.sleeping = true; 
     updateLives();
-    cookieChar.sleeping = true;
   }
 }
 
@@ -156,5 +158,5 @@ function restart() {
   currentScore = 0;
   gameOver = false;
   messageSent = false;
-  cookieChar.img = happyMole;
+  cookieChar.img = cheerMole;
 }
