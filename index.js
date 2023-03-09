@@ -43,7 +43,7 @@ function setup() {
 function draw() {
   if (!gameOver) {
     playGame();
-    cookieChar.debug = mouse.pressing();
+    //cookieChar.debug = mouse.pressing();
   }
 }
 

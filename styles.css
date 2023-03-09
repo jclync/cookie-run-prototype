@@ -1,21 +1,19 @@
-/*
 * {
-    box-sizing: border-box;
-  }
-*/
+  box-sizing: border-box;
+}
 
-  html, body {
-    font-family: 'Montserrat';
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    flex-wrap: nowrap;
-  }
-  canvas {
-    display: block;
-  }
+html, body {
+  font-family: 'Montserrat';
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+}
+canvas {
+  display: block;
+}
   
   /*
   body {
@@ -28,7 +26,7 @@
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     height: 100%;
-  } */
+  } 
   
   .sign-in {
     height: 4rem;
@@ -113,7 +111,7 @@
   
   #message-entry:focus {
     outline: none;
-  }
+  } */
   
   /* SCROLLBAR */
   
