@@ -1,6 +1,8 @@
+/*
 * {
     box-sizing: border-box;
   }
+*/
 
   html, body {
     font-family: 'Montserrat';
@@ -45,7 +47,7 @@
     padding: 0.5rem;
   }
   
-  #scores-container {
+  #-container {
     background-color: rgb(64, 51, 95);
     border-radius: 1rem;
     padding: 1rem;
