@@ -1,20 +1,27 @@
 {
-  "devDependencies": {
-    "@web/dev-server": "^0.1.35",
-    "gh-pages": "^5.0.0",
-    "vite": "^4.1.4"
-  },
+  "name": "cookie-run-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "host": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "vite build --base=/cookie-run-prototype/ && gh-pages -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch",
+    "build": "rollup --config"
   },
-  "dependencies": {
-    "firebase": "^9.17.2",
-    "firebaseui": "^6.0.2",
-    "lit-html": "^2.6.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jclync/cookie-run-prototype.git"
+  },
+  "author": "Jocelyn Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jclync/cookie-run-prototype/issues"
+  },
+  "homepage": "https://github.com/jclync/cookie-run-prototype#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@web/dev-server": "^0.1.35",
+    "rollup": "^2.79.1",
+    "rollup-plugin-copy": "^3.4.0"
   }
 }

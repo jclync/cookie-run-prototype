@@ -45,7 +45,7 @@
     padding: 0.5rem;
   }
   
-  #messages-container {
+  #scores-container {
     background-color: rgb(64, 51, 95);
     border-radius: 1rem;
     padding: 1rem;
@@ -61,37 +61,37 @@
     bottom: 0;
   }
   
-  .message {
+  .score {
     margin: 0.5rem 0;
     display: flex;
     flex-direction: column;
   }
   
-  .message.left {
+  .score.left {
     align-items: start;
   }
   
-  .message.left > .message-content {
+  .score.left > .score-content {
     border-bottom-left-radius: 0.2rem;
     background-color: antiquewhite;
   }
   
-  .message.right {
+  .score.right {
     align-items: end;
   }
   
-  .message.right > .message-content {
+  .score.right > .score-content {
     border-bottom-right-radius: 0.2rem;
     background-color: rgb(168, 117, 161);
   }
   
-  .message-info {
+  .score-info {
     margin-top: 0.3rem;
     color: black;
     font-size: smaller;
   }
   
-  .message-content {
+  .score-content {
     padding: 0.5rem;
     width: fit-content;
     max-width: 80%;
